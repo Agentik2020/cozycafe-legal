@@ -13,9 +13,9 @@ ul { padding-left: 22px; }
 table { border-collapse: collapse; width: 100%; font-size: 14px; margin: 10px 0; }
 th, td { border: 1px solid #e3c9a6; padding: 7px 9px; text-align: left; vertical-align: top; }
 th { background: #f3e1c8; }
-.bar { position: sticky; top: 0; z-index: 2; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 14px; background: #6a250c; box-shadow: 0 2px 8px rgba(0,0,0,.2); flex-wrap: wrap; }
+.bar { position: sticky; top: 0; z-index: 2; display: flex; align-items: center; justify-content: space-between; gap: 6px; padding: 10px 12px; background: #6a250c; box-shadow: 0 2px 8px rgba(0,0,0,.2); }
 .bar nav { display: flex; gap: 6px; }
-.bar a { color: #fbe3c4; text-decoration: none; font-weight: 700; padding: 7px 14px; border-radius: 18px; }
+.bar a { color: #fbe3c4; text-decoration: none; font-weight: 700; padding: 7px 14px; border-radius: 18px; white-space: nowrap; }
 .bar a.active { background: #fbf3e6; color: #6a250c; }
 .lang a { padding: 7px 10px; font-size: 14px; }
-@media (max-width: 560px) { .toc ol { columns: 1; } .bar a { padding: 6px 10px; font-size: 14px; } }
+@media (max-width: 560px) { .toc ol { columns: 1; } .bar { padding: 8px; } .bar nav { gap: 2px; } .bar a { padding: 6px 9px; font-size: 13px; } .lang a { padding: 6px 7px; font-size: 12px; } h1 { font-size: 23px; } }
