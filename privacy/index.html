@@ -4,16 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cozy Cafe — Privacy Policy</title>
-<link rel="stylesheet" href="../style.css?v=4">
+<link rel="stylesheet" href="../style.css?v=5">
 </head>
 <body>
-<header class="bar">
+<header class="bar" dir="ltr">
 <nav class="tabs"><a href="../privacy/" class="active">Privacy Policy</a><a href="../terms/">Terms of Use</a></nav>
-<nav class="lang"><a href="../privacy/" class="active">EN</a><a href="../privacy/ru/">RU</a></nav>
+<details class="lang"><summary>English</summary><ul><li><a href="../privacy/" lang="en" class="active">English</a></li><li><a href="../privacy/es/" lang="es">Español</a></li><li><a href="../privacy/pt-br/" lang="pt-BR">Português (Brasil)</a></li><li><a href="../privacy/fr/" lang="fr">Français</a></li><li><a href="../privacy/de/" lang="de">Deutsch</a></li><li><a href="../privacy/it/" lang="it">Italiano</a></li><li><a href="../privacy/ru/" lang="ru">Русский</a></li><li><a href="../privacy/uk/" lang="uk">Українська</a></li><li><a href="../privacy/pl/" lang="pl">Polski</a></li><li><a href="../privacy/tr/" lang="tr">Türkçe</a></li><li><a href="../privacy/nl/" lang="nl">Nederlands</a></li><li><a href="../privacy/id/" lang="id">Bahasa Indonesia</a></li><li><a href="../privacy/ms/" lang="ms">Bahasa Melayu</a></li><li><a href="../privacy/fil/" lang="fil">Filipino</a></li><li><a href="../privacy/vi/" lang="vi">Tiếng Việt</a></li><li><a href="../privacy/th/" lang="th">ไทย</a></li><li><a href="../privacy/ja/" lang="ja">日本語</a></li><li><a href="../privacy/ko/" lang="ko">한국어</a></li><li><a href="../privacy/zh-cn/" lang="zh-CN">简体中文</a></li><li><a href="../privacy/zh-tw/" lang="zh-TW">繁體中文</a></li><li><a href="../privacy/ar/" lang="ar">العربية</a></li><li><a href="../privacy/hi/" lang="hi">हिन्दी</a></li></ul></details>
 </header>
 <main>
 <h1>Cozy Cafe — Privacy Policy</h1>
 <p class="date">Last updated: November 7, 2026</p>
+
 <p>This Privacy Policy explains how Agentik Studio ("we", "us", "our") handles information in connection with the mobile game <b>Cozy Cafe</b> (the "Game"). Please read it to understand what information is involved, why, and what choices you have.</p>
 <p>In short: the Game has <b>no accounts</b> and we do <b>not</b> run servers that collect your personal data. Your progress stays on your device. Ads are shown by Google AdMob and purchases are processed by Google Play; those Google services handle the data they need under Google's own policies.</p>
 <div class="toc"><b>Contents</b><ol><li><a href="#collect">Information We Collect</a></li><li><a href="#use">How We Use Information</a></li><li><a href="#ads">Advertising (Google AdMob)</a></li><li><a href="#purchases">In-App Purchases (Google Play)</a></li><li><a href="#share">How Information Is Shared</a></li><li><a href="#third">Third-Party Services</a></li><li><a href="#retention">Data Retention</a></li><li><a href="#security">Security</a></li><li><a href="#transfer">International Transfers</a></li><li><a href="#children">Children</a></li><li><a href="#rights">Your Rights</a></li><li><a href="#california">Notice for California Residents</a></li><li><a href="#changes">Changes to This Policy</a></li><li><a href="#contact">Contact Us</a></li></ol></div>
@@ -101,5 +102,10 @@
 <section id="contact"><h2>14. Contact Us</h2>
 <p>Agentik Studio<br>Email: <a href="mailto:agentikstudiosupport@gmail.com">agentikstudiosupport@gmail.com</a></p></section>
 </main>
+<script>
+// Close the language list when tapping elsewhere; show the chosen language in view.
+document.addEventListener("click", function (e) { var d = document.querySelector(".lang"); if (d.open && !d.contains(e.target)) d.open = false; });
+document.querySelector(".lang").addEventListener("toggle", function () { var a = this.querySelector("a.active"); if (this.open && a) a.parentNode.parentNode.scrollTop = a.offsetTop - 85; });
+</script>
 </body>
 </html>

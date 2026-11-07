@@ -4,16 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cozy Cafe — Условия использования</title>
-<link rel="stylesheet" href="../../style.css?v=4">
+<link rel="stylesheet" href="../../style.css?v=5">
 </head>
 <body>
-<header class="bar">
+<header class="bar" dir="ltr">
 <nav class="tabs"><a href="../../privacy/ru/">Конфиденциальность</a><a href="../../terms/ru/" class="active">Условия</a></nav>
-<nav class="lang"><a href="../../terms/">EN</a><a href="../../terms/ru/" class="active">RU</a></nav>
+<details class="lang"><summary>Русский</summary><ul><li><a href="../../terms/" lang="en">English</a></li><li><a href="../../terms/es/" lang="es">Español</a></li><li><a href="../../terms/pt-br/" lang="pt-BR">Português (Brasil)</a></li><li><a href="../../terms/fr/" lang="fr">Français</a></li><li><a href="../../terms/de/" lang="de">Deutsch</a></li><li><a href="../../terms/it/" lang="it">Italiano</a></li><li><a href="../../terms/ru/" lang="ru" class="active">Русский</a></li><li><a href="../../terms/uk/" lang="uk">Українська</a></li><li><a href="../../terms/pl/" lang="pl">Polski</a></li><li><a href="../../terms/tr/" lang="tr">Türkçe</a></li><li><a href="../../terms/nl/" lang="nl">Nederlands</a></li><li><a href="../../terms/id/" lang="id">Bahasa Indonesia</a></li><li><a href="../../terms/ms/" lang="ms">Bahasa Melayu</a></li><li><a href="../../terms/fil/" lang="fil">Filipino</a></li><li><a href="../../terms/vi/" lang="vi">Tiếng Việt</a></li><li><a href="../../terms/th/" lang="th">ไทย</a></li><li><a href="../../terms/ja/" lang="ja">日本語</a></li><li><a href="../../terms/ko/" lang="ko">한국어</a></li><li><a href="../../terms/zh-cn/" lang="zh-CN">简体中文</a></li><li><a href="../../terms/zh-tw/" lang="zh-TW">繁體中文</a></li><li><a href="../../terms/ar/" lang="ar">العربية</a></li><li><a href="../../terms/hi/" lang="hi">हिन्दी</a></li></ul></details>
 </header>
 <main>
 <h1>Cozy Cafe — Условия использования</h1>
 <p class="date">Последнее обновление: 7 ноября 2026 г.</p>
+<p class="note">Это перевод. Если он расходится с английской версией, действует английская версия.</p>
 <p>Настоящие Условия использования («Условия») — соглашение между вами и Agentik Studio («мы»), регулирующее использование мобильной игры <b>Cozy Cafe</b> («Игра»). Устанавливая Игру, открывая её или играя в неё, вы принимаете эти Условия и подтверждаете, что ознакомлены с <a href="../../privacy/ru/">Политикой конфиденциальности</a>. Если вы не согласны, не используйте Игру.</p>
 <div class="toc"><b>Содержание</b><ol><li><a href="#eligibility">Возраст и несовершеннолетние</a></li><li><a href="#license">Лицензия на Игру</a></li><li><a href="#conduct">Правила использования</a></li><li><a href="#virtual">Виртуальные предметы</a></li><li><a href="#purchases">Покупки и возвраты</a></li><li><a href="#ads">Реклама</a></li><li><a href="#updates">Обновления, доступность и изменения</a></li><li><a href="#ip">Интеллектуальная собственность</a></li><li><a href="#feedback">Отзывы и предложения</a></li><li><a href="#third">Сторонние сервисы и ссылки</a></li><li><a href="#disclaimer">Отказ от гарантий</a></li><li><a href="#liability">Ограничение ответственности</a></li><li><a href="#indemnity">Возмещение</a></li><li><a href="#termination">Прекращение</a></li><li><a href="#law">Применимое право и споры</a></li><li><a href="#consumer">Права потребителей</a></li><li><a href="#general">Общие положения</a></li><li><a href="#changes">Изменения Условий</a></li><li><a href="#contact">Связь с нами</a></li></ol></div>
 <section id="eligibility"><h2>1. Возраст и несовершеннолетние</h2><p>Вы можете пользоваться Игрой, если по законам вашей страны вы достаточно взрослые, чтобы принять эти Условия, либо с разрешения родителя или законного представителя, который принимает их за вас. Несовершеннолетним следует совершать покупки только с согласия родителя или опекуна, который за них отвечает. Родители могут включить подтверждение покупок в Google Play.</p></section>
@@ -46,5 +47,10 @@
 <section id="changes"><h2>18. Изменения Условий</h2><p>Условия могут обновляться. Новая версия публикуется на этой странице с новой датой. О существенных изменениях мы также сообщим в Игре или на странице в магазине. Продолжая играть после вступления изменений в силу, вы их принимаете.</p></section>
 <section id="contact"><h2>19. Связь с нами</h2><p>Agentik Studio<br>Почта: <a href="mailto:agentikstudiosupport@gmail.com">agentikstudiosupport@gmail.com</a></p></section>
 </main>
+<script>
+// Close the language list when tapping elsewhere; show the chosen language in view.
+document.addEventListener("click", function (e) { var d = document.querySelector(".lang"); if (d.open && !d.contains(e.target)) d.open = false; });
+document.querySelector(".lang").addEventListener("toggle", function () { var a = this.querySelector("a.active"); if (this.open && a) a.parentNode.parentNode.scrollTop = a.offsetTop - 85; });
+</script>
 </body>
 </html>

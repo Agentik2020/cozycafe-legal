@@ -4,16 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cozy Cafe — Политика конфиденциальности</title>
-<link rel="stylesheet" href="../../style.css?v=4">
+<link rel="stylesheet" href="../../style.css?v=5">
 </head>
 <body>
-<header class="bar">
+<header class="bar" dir="ltr">
 <nav class="tabs"><a href="../../privacy/ru/" class="active">Конфиденциальность</a><a href="../../terms/ru/">Условия</a></nav>
-<nav class="lang"><a href="../../privacy/">EN</a><a href="../../privacy/ru/" class="active">RU</a></nav>
+<details class="lang"><summary>Русский</summary><ul><li><a href="../../privacy/" lang="en">English</a></li><li><a href="../../privacy/es/" lang="es">Español</a></li><li><a href="../../privacy/pt-br/" lang="pt-BR">Português (Brasil)</a></li><li><a href="../../privacy/fr/" lang="fr">Français</a></li><li><a href="../../privacy/de/" lang="de">Deutsch</a></li><li><a href="../../privacy/it/" lang="it">Italiano</a></li><li><a href="../../privacy/ru/" lang="ru" class="active">Русский</a></li><li><a href="../../privacy/uk/" lang="uk">Українська</a></li><li><a href="../../privacy/pl/" lang="pl">Polski</a></li><li><a href="../../privacy/tr/" lang="tr">Türkçe</a></li><li><a href="../../privacy/nl/" lang="nl">Nederlands</a></li><li><a href="../../privacy/id/" lang="id">Bahasa Indonesia</a></li><li><a href="../../privacy/ms/" lang="ms">Bahasa Melayu</a></li><li><a href="../../privacy/fil/" lang="fil">Filipino</a></li><li><a href="../../privacy/vi/" lang="vi">Tiếng Việt</a></li><li><a href="../../privacy/th/" lang="th">ไทย</a></li><li><a href="../../privacy/ja/" lang="ja">日本語</a></li><li><a href="../../privacy/ko/" lang="ko">한국어</a></li><li><a href="../../privacy/zh-cn/" lang="zh-CN">简体中文</a></li><li><a href="../../privacy/zh-tw/" lang="zh-TW">繁體中文</a></li><li><a href="../../privacy/ar/" lang="ar">العربية</a></li><li><a href="../../privacy/hi/" lang="hi">हिन्दी</a></li></ul></details>
 </header>
 <main>
 <h1>Cozy Cafe — Политика конфиденциальности</h1>
 <p class="date">Последнее обновление: 7 ноября 2026 г.</p>
+<p class="note">Это перевод. Если он расходится с английской версией, действует английская версия.</p>
 <p>Эта Политика конфиденциальности объясняет, как Agentik Studio («мы») обращается с информацией, связанной с мобильной игрой <b>Cozy Cafe</b> («Игра»): какие данные используются, зачем и как вы можете ими управлять.</p>
 <p>Коротко: в Игре <b>нет аккаунтов</b>, и у нас <b>нет</b> серверов, собирающих ваши персональные данные. Прогресс хранится на вашем устройстве. Рекламу показывает Google AdMob, покупки проводит Google Play — эти сервисы Google обрабатывают нужные им данные по собственным правилам Google.</p>
 <div class="toc"><b>Содержание</b><ol><li><a href="#collect">Какие данные собираются</a></li><li><a href="#use">Как используются данные</a></li><li><a href="#ads">Реклама (Google AdMob)</a></li><li><a href="#purchases">Покупки (Google Play)</a></li><li><a href="#share">Кому передаются данные</a></li><li><a href="#third">Сторонние сервисы</a></li><li><a href="#retention">Сроки хранения</a></li><li><a href="#security">Безопасность</a></li><li><a href="#transfer">Передача данных в другие страны</a></li><li><a href="#children">Дети</a></li><li><a href="#rights">Ваши права</a></li><li><a href="#california">Уведомление для жителей Калифорнии</a></li><li><a href="#changes">Изменения политики</a></li><li><a href="#contact">Связь с нами</a></li></ol></div>
@@ -101,5 +102,10 @@
 <section id="contact"><h2>14. Связь с нами</h2>
 <p>Agentik Studio<br>Почта: <a href="mailto:agentikstudiosupport@gmail.com">agentikstudiosupport@gmail.com</a></p></section>
 </main>
+<script>
+// Close the language list when tapping elsewhere; show the chosen language in view.
+document.addEventListener("click", function (e) { var d = document.querySelector(".lang"); if (d.open && !d.contains(e.target)) d.open = false; });
+document.querySelector(".lang").addEventListener("toggle", function () { var a = this.querySelector("a.active"); if (this.open && a) a.parentNode.parentNode.scrollTop = a.offsetTop - 85; });
+</script>
 </body>
 </html>
