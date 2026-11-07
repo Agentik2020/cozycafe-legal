@@ -5,6 +5,8 @@ h2 { font-size: 19px; color: #8a3a12; margin: 26px 0 6px; }
 .date { color: #8a6a55; font-size: 14px; margin-top: 0; }
 a { color: #b4511a; }
 hr { border: 0; border-top: 2px solid #e8d2b4; margin: 40px 0; }
-.tabs { position: sticky; top: 0; display: flex; gap: 8px; justify-content: center; padding: 12px; background: #6a250c; box-shadow: 0 2px 8px rgba(0,0,0,.2); }
-.tabs a { color: #fbe3c4; text-decoration: none; font-weight: 700; padding: 8px 16px; border-radius: 20px; }
-.tabs a.active { background: #fbf3e6; color: #6a250c; }
+.bar { position: sticky; top: 0; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 14px; background: #6a250c; box-shadow: 0 2px 8px rgba(0,0,0,.2); flex-wrap: wrap; }
+.bar nav { display: flex; gap: 6px; }
+.bar a { color: #fbe3c4; text-decoration: none; font-weight: 700; padding: 7px 14px; border-radius: 18px; }
+.bar a.active { background: #fbf3e6; color: #6a250c; }
+.lang a { padding: 7px 10px; font-size: 14px; }
