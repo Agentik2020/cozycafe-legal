@@ -1,12 +1,21 @@
-body { margin: 0; background: #fbf3e6; color: #3b2414; font: 16px/1.6 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
-main { max-width: 760px; margin: 0 auto; padding: 24px 18px 48px; }
-h1 { font-size: 26px; color: #6a250c; margin: 24px 0 4px; }
-h2 { font-size: 19px; color: #8a3a12; margin: 26px 0 6px; }
-.date { color: #8a6a55; font-size: 14px; margin-top: 0; }
+body { margin: 0; background: #fbf3e6; color: #3b2414; font: 16px/1.65 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+main { max-width: 800px; margin: 0 auto; padding: 20px 18px 56px; }
+h1 { font-size: 27px; color: #6a250c; margin: 18px 0 2px; line-height: 1.25; }
+h2 { font-size: 20px; color: #8a3a12; margin: 34px 0 8px; scroll-margin-top: 70px; }
+h3 { font-size: 17px; color: #8a3a12; margin: 20px 0 4px; }
+.date { color: #8a6a55; font-size: 14px; margin: 0 0 18px; }
 a { color: #b4511a; }
-hr { border: 0; border-top: 2px solid #e8d2b4; margin: 40px 0; }
-.bar { position: sticky; top: 0; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 14px; background: #6a250c; box-shadow: 0 2px 8px rgba(0,0,0,.2); flex-wrap: wrap; }
+ul { padding-left: 22px; }
+.toc { background: #fff8ee; border: 1px solid #ecd6b8; border-radius: 12px; padding: 12px 18px; margin: 18px 0; }
+.toc b { color: #6a250c; }
+.toc ol { margin: 6px 0 0; padding-left: 20px; columns: 2; column-gap: 28px; }
+.toc li { break-inside: avoid; font-size: 15px; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; margin: 10px 0; }
+th, td { border: 1px solid #e3c9a6; padding: 7px 9px; text-align: left; vertical-align: top; }
+th { background: #f3e1c8; }
+.bar { position: sticky; top: 0; z-index: 2; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 14px; background: #6a250c; box-shadow: 0 2px 8px rgba(0,0,0,.2); flex-wrap: wrap; }
 .bar nav { display: flex; gap: 6px; }
 .bar a { color: #fbe3c4; text-decoration: none; font-weight: 700; padding: 7px 14px; border-radius: 18px; }
 .bar a.active { background: #fbf3e6; color: #6a250c; }
 .lang a { padding: 7px 10px; font-size: 14px; }
+@media (max-width: 560px) { .toc ol { columns: 1; } .bar a { padding: 6px 10px; font-size: 14px; } }
